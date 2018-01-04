@@ -1,0 +1,172 @@
+<app-sidebar>
+</app-sidebar>
+          <div id="page-wrapper">
+
+            <div class="container-fluid">
+<div class="jilay">
+                <!-- Page Heading -->
+                <div class="row">
+              <div align="center">
+        
+                    <div class="col-lg-12">
+                        <h1 class="page-header"><i class="fa fa-user"></i>
+                            Update Student
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a routerLink="/home">Dashboard</a>
+                            </li>
+                            <li >
+                                <i class="fa fa-group"></i> <a routerLink="/home ">Manage Students</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-user"></i> Update Student
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                </div>
+                <!-- /.row -->
+        <div class="row">
+          <div align="center">
+
+        <form>
+        <div >
+            <strong>NOTE:</strong> Fields marked with <span style="color:red">*</span> are mandatory.
+        </div><br/>
+        <div class="row">
+        <div class="col-sm-3">
+            <h4>First Name:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="f_name" id="f_name" name="f_name" class="form-control" required />
+        </div>
+        </div>
+        <div class="row">
+              <div class="col-sm-3">
+                  <h4>middel Name:<span style="color:red">*</span></h4>
+              </div>
+              <div class="col-md-5">
+                  <input type="text" [(ngModel)]="m_name" id="m_name" name="m_name" class="form-control" required />
+              </div>
+              </div>
+<div class="row">
+        <div class="col-sm-3">
+            <h4>Last Name:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="l_name" id="lname" name="lname" class="form-control" required />
+        </div>
+        </div>
+
+        
+
+<div class="row">
+        <div class="col-sm-3">
+            <h4>Email-Id:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="stu_email_id" id="email" name="email" class="form-control" required />
+        </div>
+        </div>
+
+
+<div class="row">
+        <div class="col-sm-3">
+            <h4>Password:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="password" [(ngModel)]="pass" id="password" name="password" class="form-control" required />
+        </div>
+        </div>
+
+<div class="row">
+        
+                <div class="col-sm-3" >
+            <h4>Gender:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-3">
+            <input type="radio" [(ngModel)]="gen" id="gender" name="gender" value="Male" required /> Male
+            <input type="radio" [(ngModel)]="gen" id="gender" name="gender" value="Female" required /> Female
+        </div>
+</div>
+
+<div class="row">
+        <div class="col-sm-3">
+            <h4>Address:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="address" id="address" name="address" class="form-control" required />
+        </div>
+        </div>
+
+
+<div class="row">
+        
+                      <div class="col-sm-3" >
+            <h4>BirthDate:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="date" [(ngModel)]="dob" id="dob" name="dob" class="form-control" required />
+        </div>
+
+        </div>
+
+
+<div class="row">
+        
+                      <div class="col-sm-3" >
+            <h4>Mobile-No.:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="number" [(ngModel)]="m_no" id="mno" name="mno" class="form-control" required />
+        </div>
+
+        </div>
+
+<div class="row">
+        
+                      <div class="col-sm-3" >
+            <h4>Qualifiaction:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="qualification" id="qua" name="qua" class="form-control" required />
+        </div>
+
+        </div>
+        <div class="row">
+        
+              <div class="col-sm-3" >
+    <h4>Adhar no:<span style="color:red">*</span></h4>
+</div>
+<div class="col-md-5">
+    <input type="text" [(ngModel)]="adhar_no" id="adhar_no" name="adhar_no" class="form-control" required />
+</div>
+
+</div>
+
+
+<div class="row">
+        
+                      <div class="col-sm-3" >
+            <h4>Image:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="img" id="img" name="img" class="form-control" required />
+        </div>
+
+        </div>
+<br/>
+        <div class="row">
+        <div class="col-lg-12" align="center">
+        <input type="submit" (click)="onupdate()" class="btn btn-primary" />
+        <input type="reset" class="btn btn-danger" value="Reset" />
+        </div>
+        </div>
+
+
+        </form>
+            </div>
+              <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->

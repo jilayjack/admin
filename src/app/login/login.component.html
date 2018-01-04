@@ -1,0 +1,36 @@
+
+<div style="background-image:url(./assets/images/login.jpg); height:700px; " >
+    
+    <div style="padding-top:180px; padding-left:350px; padding-right: 350px; opacity:0.8">
+    <div style="border:5px solid;border-radius:100px 0px 100px 0px;text-align:center;padding:20px;background:rgba(255,255,255,0.5);" >
+        <h2 style="font-family:verdana">Login Panel</h2>
+        <br/>
+        <form >
+            <table width="90%">
+                <tr>
+                    <td>
+                        <span style="font-size:20px;padding-right:20px">Username:</span>
+                    </td>
+                    <td>
+                        <input type="text" name="username" class="form-control" [(ngModel)]="admin_email_id"   id="admin_email_id" name="admin_email_id" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="font-size:20px;padding-right:20px">Password:</span>
+                    </td>
+                    <td>
+                        <input type="password" name="pass" [(ngModel)]="pass" id="pass" class="form-control" required />
+                    </td>
+                </tr>
+            </table>
+            <br/><br/>
+            <div align="center" width="100%">
+                <button style="height:40px;width:120px" (click)=" onlogin()" type="submit" class="btn btn-primary" ><span style="font-size:16px"><i class="fa fa-sign-in">  Log In </i></span></button>
+                <button style="height:40px;width:120px" type="reset" class="btn btn-danger" ><span style="font-size:16px"><i class="fa fa-sign-in">  Reset </i></span></button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>

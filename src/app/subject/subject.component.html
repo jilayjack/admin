@@ -1,0 +1,86 @@
+<app-sidebar>
+</app-sidebar>
+    <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row" class="jilay">
+        
+        <div align="center">
+                        <h1 class="page-header"><i class="fa fa-dashboard"></i>
+                            Dashboard <small>Statistics Overview</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-dashboard"></i> Subject Page
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+    <div class="row">
+            <div align="right">
+      
+                    <input type="text" #input1 (keyup)="search(input1.value)" placeholder="search">
+               </div>
+            
+        <div align="center">
+                  
+            <a routerLink="/add-subject" class="btn btn-primary"><i class="fa fa-user"></i> Add Subject</a>
+            <button class="btn btn-danger"(click)="deleteAll()" ><i class="fa fa-remove"></i> Delete Selected</button>
+    
+            <button class="btn btn-warning" onClick="window.print()"><i class="fa fa-print"></i> Print Data</button>
+     </div>   
+    </div>
+    <div class="row" class="jilay">
+        <div align="center">
+    
+    	<table class="table table-striped" id="table" border="1" align="center">
+									 
+        <tr>
+            <th></th>
+            <th>Subject-title</th>
+        <th>Subject-Desc</th>
+        <th>Course</th>
+        <th>faculty</th>
+        
+          <th>Action</th>
+     
+          </tr>
+      
+      <tr *ngFor="let item of subject" style="cursor:hand">
+        
+            
+            <td>
+            <input type="checkbox" (change)="checkChange(item)">
+</td>
+            <td>
+            {{item.sub_title}}
+</td>
+     <td>
+            {{item.sub_desc}}
+     </td>
+     <td>
+        {{item.course_title}}
+ </td>
+ <td>
+    {{item.faculty_name}}
+</td>
+ <td>
+        <a (click)="onupdate(item)" class="btn btn-primary"  ><i class="fa fa-edit"></i> Update</a>
+        <button class="btn btn-danger" (click)="onsubDelete(item)" ><i class="fa fa-remove"></i> Delete</button>
+    </td>
+     
+
+     </table>
+    <hr>
+</div>
+    </div>
+     
+            </div>
+    
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+  

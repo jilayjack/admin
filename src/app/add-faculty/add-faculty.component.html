@@ -1,0 +1,144 @@
+<app-sidebar>
+  </app-sidebar>
+            <div id="page-wrapper">
+  
+              <div class="container-fluid">
+  <div class="jilay">
+                  <!-- Page Heading -->
+                  <div class="row">
+                <div align="center">
+          
+                      <div class="col-lg-12">
+                          <h1 class="page-header"><i class="fa fa-user"></i>
+                              Add faculty
+                          </h1>
+                          <ol class="breadcrumb">
+                              <li>
+                                  <i class="fa fa-dashboard"></i>  <a routerLink="/home">Dashboard</a>
+                              </li>
+                              <li >
+                                  <i class="fa fa-group"></i> <a routerLink="/faculty">Manage Students</a>
+                              </li>
+                              <li class="active">
+                                  <i class="fa fa-user"></i> Add faculty
+                              </li>
+                          </ol>
+                      </div>
+                  </div>
+                  </div>
+                  <!-- /.row -->
+          <div class="row">
+            <div align="center">
+  
+          <form>
+          <div >
+              <strong>NOTE:</strong> Fields marked with <span style="color:red">*</span> are mandatory.
+          </div><br/>
+          <div class="row">
+          <div class="col-sm-3">
+              <h4>Email id<span style="color:red">*</span></h4>
+          </div>
+          <div class="col-md-5">
+              <input type="text" [(ngModel)]="f_email_id" id="f_email_id" name="f_email_id" class="form-control" required />
+          </div>
+          </div>
+  
+  <div class="row">
+          <div class="col-sm-3">
+              <h4>Password<span style="color:red">*</span></h4>
+          </div>
+          <div class="col-md-5">
+              <input type="text" [(ngModel)]="f_pass" id="f_pass" name="f_pass" class="form-control" required />
+          </div>
+          </div>
+  
+          
+  
+  <div class="row">
+          <div class="col-sm-3">
+              <h4>Name<span style="color:red">*</span></h4>
+          </div>
+          <div class="col-md-5">
+              <input type="text" [(ngModel)]="faculty_name" id="faculty_name" name="faculty_name" class="form-control" required />
+          </div>
+          </div>
+  
+     <div class="row">
+          
+                  <div class="col-sm-3" >
+              <h4>Address<span style="color:red">*</span></h4>
+          </div>
+          <div class="col-md-3">
+              <input type="f_address" [(ngModel)]="f_address" id="f_address" name="f_address" class="form-control" required /></div>
+  </div>
+  
+  <div class="row">
+          <div class="col-sm-3">
+              <h4>Moblie No<span style="color:red">*</span></h4>
+          </div>
+          <div class="col-md-5">
+              <input type="number" [(ngModel)]="f_m_no" id="f_m_no" name="f_m_no" class="form-control" required />
+          </div>
+          </div>
+  
+  
+  <div class="row">
+          
+                        <div class="col-sm-3" >
+              <h4>qalification:<span style="color:red">*</span></h4>
+          </div>
+          <div class="col-md-5">
+              <input type="text" [(ngModel)]="f_qalification" id="f_qalification" name="f_qalification" class="form-control" required />
+          </div>
+  
+          </div>
+ 
+  
+  
+  
+  
+  <div class="row">
+          
+                        <div class="col-sm-3" >
+              <h4>Experience:<span style="color:red">*</span></h4>
+          </div>
+          <div class="col-md-5">
+              <input type="text" [(ngModel)]="f_experience" id="f_experience" name="f_experience" class="form-control" required />
+          </div>
+  
+          </div>
+          <div class="row">
+          
+              <div class="col-sm-3" >
+    <h4>Join date:<span style="color:red">*</span></h4>
+</div>
+<div class="col-md-5">
+    <input type="text" [(ngModel)]="f_join_date" id="f_join_date" name="f_join_date" class="form-control" required />
+</div>
+
+</div>
+<div class="row">
+        
+    <div class="col-sm-3" >
+<h4>Image:<span style="color:red">*</span></h4>
+</div>
+<div class="col-md-5">
+<input type="text" [(ngModel)]="f_img" id="f_img" name="f_img" class="form-control" required />
+</div>
+
+</div>
+  <br/>
+          <div class="row">
+          <div class="col-lg-12" align="center">
+          <input type="submit" (click)="add()" class="btn btn-primary" />
+          <input type="reset" class="btn btn-danger" value="Reset" />
+          </div>
+          </div>
+  
+  
+          </form>
+              </div>
+                <!-- /.container-fluid -->
+          </div>
+          <!-- /#page-wrapper -->
+  

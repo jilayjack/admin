@@ -1,0 +1,123 @@
+<app-sidebar>
+</app-sidebar>
+          <div id="page-wrapper">
+
+            <div class="container-fluid">
+<div class="jilay">
+                <!-- Page Heading -->
+                <div class="row">
+              <div align="center">
+        
+                    <div class="col-lg-12">
+                        <h1 class="page-header"><i class="fa fa-user"></i>
+                            update Event
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a routerLink="/home">Dashboard</a>
+                            </li>
+                            <li >
+                                <i class="fa fa-group"></i> <a routerLink="/events">Manage Event</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-user"></i> update Event
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                </div>
+                <!-- /.row -->
+        <div class="row">
+          <div align="center">
+
+        <form>
+        <div >
+            <strong>NOTE:</strong> Fields marked with <span style="color:red">*</span> are mandatory.
+        </div><br/>
+        
+            <div class="row">
+        <div class="col-sm-3">
+            <h4>Title:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="title" id="title" name="title" class="form-control" required />
+        </div>
+        </div>
+
+            <div class="row">
+        <div class="col-sm-3">
+            <h4>Description:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="desc" id="desc" name="desc" class="form-control" required />
+        </div>
+        </div>
+
+
+            <div class="row">
+        <div class="col-sm-3">
+            <h4>Venue<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="location" id="location" name="location" class="form-control" required />
+        </div>
+        </div>
+
+
+            <div class="row">
+        <div class="col-sm-3">
+            <h4>Image:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="img" id="img" name="img" class="form-control" required />
+        </div>
+        </div>
+
+
+            <div class="row">
+        <div class="col-sm-3">
+            <h4>Date:<span style="color:red">*</span></h4>
+        </div>
+        <div class="col-md-5">
+            <input type="date" [(ngModel)]="date" id="date"  name="date" class="form-control" required />
+        </div>
+        </div>
+
+            <div class="row">
+        <div class="col-sm-3">
+            <h4>Seminar-video:</h4>
+        </div>
+        <div class="col-md-5">
+            <input type="text" [(ngModel)]="seminar" id="seminar" name="seminar" class="form-control" required />
+        </div>
+        </div>
+        <div class="row">
+                <div class="col-sm-3">
+                    <h4>course video</h4>
+                </div>
+                <div class="col-md-5">
+                      <select [(ngModel)]="course_id" name="course">
+                        
+                          <option *ngFor="let item of course"  [value]="item.course_id" [selected]="item.course_id==fk_course_id">{{item.course_title}}</option>
+                         
+                         
+                        </select>
+                    </div>
+                </div>
+<br>
+        <div class="row">
+        <div class="col-lg-12" align="center">
+        <input type="submit" (click)="onupdate()" class="btn btn-primary" />
+        <input type="reset" class="btn btn-danger" value="Reset" />
+        </div>
+        </div>
+<br><br><br><br><br>
+        
+        </form>
+            </div>
+        </div>
+        </div>
+              <!-- /.container-fluid -->
+        </div>
+</div>
+        <!-- /#page-wrapper -->
